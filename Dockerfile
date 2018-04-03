@@ -12,4 +12,4 @@ RUN chmod +x /opt/mariadb-install.sh
 EXPOSE 3306
 
 CMD ["bin/bash", "/opt/mariadb-install.sh"]
-ENTRYPOINT ["mysqld"]
+ENTRYPOINT ["mysqld", "--user=root"]
